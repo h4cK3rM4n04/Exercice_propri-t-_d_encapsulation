@@ -1,0 +1,54 @@
+Voici un exemple d'exercice qui utilise les notions suivantes :
+
+Variables
+Opérateurs
+Conditions
+Boucles
+Fonctions
+Enoncé :
+Écrire une fonction Python qui prend un nombre entier en entrée et qui affiche les "n" premiers nombres de la suite de Fibonacci.
+
+La suite de Fibonacci est une suite d'entiers dans laquelle chaque terme est la somme des deux termes qui le précèdent. La suite commence généralement par les nombres 0 et 1, et les termes suivants sont obtenus en additionnant les deux termes précédents :
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+
+Indications :
+
+Vous pouvez utiliser une boucle while pour générer les termes de la suite jusqu'au nombre voulu.
+Vous pouvez utiliser des variables pour stocker les deux termes précédents de la suite et pour calculer le terme suivant.
+Vous pouvez utiliser une condition if pour traiter le cas où l'entrée est inférieure ou égale à zéro.
+
+=============================================================================================================================================================================
+
+Voici un exercice complexe sur la programmation orientée objet en Python sans utiliser l'héritage :
+
+Créez une classe appelée BankAccount qui possède les attributs suivants :
+
+owner (string) : le nom du propriétaire du compte bancaire
+balance (float) : le solde du compte bancaire
+La classe doit également posséder les méthodes suivantes :
+
+deposit(amount) : ajoute la quantité spécifiée au solde du compte bancaire.
+withdraw(amount) : retire la quantité spécifiée du solde du compte bancaire. Si le solde est insuffisant, affiche un message d'erreur.
+get_balance() : renvoie le solde actuel du compte bancaire.
+Ensuite, créez une classe appelée SavingsAccount qui hérite de la classe BankAccount. Cette classe doit avoir un attribut supplémentaire interest_rate (float) qui représente le taux d'intérêt pour le compte d'épargne.
+
+La classe SavingsAccount doit avoir les méthodes suivantes :
+
+add_interest() : ajoute les intérêts au solde du compte d'épargne, en utilisant le taux d'intérêt actuel.
+set_interest_rate(rate) : modifie le taux d'intérêt pour le compte d'épargne.
+Cependant, dans cet exercice, vous ne pouvez pas utiliser l'héritage pour implémenter la classe SavingsAccount. Au lieu de cela, vous devez utiliser la composition, c'est-à-dire créer une instance de BankAccount à l'intérieur de la classe SavingsAccount.
+
+==================================================================================================================================================================================
+
+Créez une classe BankAccount avec les attributs privés suivants:
+
+__account_number (chaîne de caractères)
+__balance (nombre à virgule flottante)
+La classe doit avoir les méthodes suivantes:
+
+__init__(self, account_number: str, initial_balance: float) : initialise les attributs __account_number et __balance
+deposit(self, amount: float) : ajoute un montant à la balance
+withdraw(self, amount: float) : retire un montant de la balance
+get_balance(self) -> float : renvoie la balance actuelle
+Assurez-vous que les méthodes deposit et withdraw ne permettent pas à la balance de devenir négative. Vous pouvez également ajouter des méthodes supplémentaires pour gérer les erreurs ou les notifications.
